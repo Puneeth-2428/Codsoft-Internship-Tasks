@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background: #121212; 
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0%;
+  width: 100%;
+  padding: 25px 10%;
+  background: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.navbar .logo {
+  font-size: 35px;
+  font-weight: 700;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  list-style: none;
+  margin-left: 35px;
+}
+.navbar ul li a {
+  font-size: 20px;
+  font-weight: 500;
+  transition: .5s;
+}
+.navbar ul li:hover a,
+.navbar ul li.active a {
+  color: aquamarine;
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 10% 0;
+    color:#fff;
+}
+.home-detail h1 {
+    font-size: 55px;
+}
+.home-detail h2 {
+    display: inline-block;
+    font-size: 32px;
+    margin-top: -10px;
+}
+.home-detail p{
+    font-size: 16px;
+    margin: 1rem 0 2.5rem;
+}
+.home-detail .btn-sci{
+    display: flex;
+    align-items: center;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: aquamarine;
+    border: 2px solid aquamarine;
+    border-radius: 40px;
+    box-shadow: 0 0 10px aquamarine;
+    font-size: 16px;
+    color: #1f2424;
+    font-weight: 600;
+    transition: .5s;
+}
+.btn:hover {
+background: transparent;
+color: aquamarine;
+box-shadow: none;
+}
+.home-detail .btn-sci .sci {
+    margin-left: 2rem;
+}
+.home-detail .btn-sci .sci a {
+    display: inline-flex;
+    padding: 0.8rem;
+    border: 0.2rem solid aquamarine;
+    border-radius: 60%;
+    font-size: 2rem;
+    color: aquamarine;
+    margin: 0 .8rem;
+}
+.home-detail .btn-sci .sci a:hover {
+    background: aquamarine;
+    color: #1f2424;
+    box-shadow: 0 0 1rem aquamarine;
+}
+.home-img .img-box {
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    background: red;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-img .img-box::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: conic-gradient(transparent, transparent, transparent, #121212);
+}
+.home-img .img-box .img-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    border-radius: 50%;
+    border: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home-img .img-box .img-item img {
+    position: absolute;
+    top: 0.5px;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+  }
+.resume {
+    display:flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 10% 0;
+    color:#fff;
+}
+
+.resume h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.resume p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.resume .btn {
+  display: inline-flex;
+  padding: 10px 30px;
+  background: aquamarine;
+  border: 2px solid aquamarine;
+  border-radius: 40px;
+  box-shadow: 0 0 10px aquamarine;
+  margin-left: 2rem;
+  font-size: 16px;
+  color: #1f2424;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.resume .btn:hover {
+  background: transparent;
+  color: aquamarine;
+  box-shadow: none;
+}
+.skills {
+  display:flex;
+  align-items: center;
+  height: 100vh;
+  padding: 60px 10% 0;
+  color:#fff;
+}
+.skills ul {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.projects {
+  display:flex;
+  align-items: center;
+  height: 100vh;
+  padding: 60px 10% 0;
+  color:#fff;
+}
+.projects h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.projects h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.projects h4 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.projects h5 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.projects h6 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.projects h7 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 200px;
+}
+.experience {
+  display:flex;
+  align-items: center;
+  height: 100vh;
+  padding: 60px 10% 0;
+  color:#fff;
+}
+.experience h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.experience h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.experience h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.experience h4 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.contact {
+  display:flex;
+  align-items: center;
+  height: 100vh;
+  padding: 60px 10% 0;
+  color:#fff;
+}
+.contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.contact h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: aquamarine;
+    border: 2px solid aquamarine;
+    border-radius: 40px;
+    box-shadow: 0 0 10px aquamarine;
+    font-size: 16px;
+    color: #1f2424;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.contact-details a:hover {
+    background: aquamarine;
+    color: #1f2424;
+    box-shadow: 0 0 1rem aquamarine;
+}
+.contact-details {
+    margin-left: 2rem;
+}
+footer {
+   font-size: 2.5rem;
+   margin-bottom: 1rem;
+   color: #fff;
+}
