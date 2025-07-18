@@ -1,1 +1,6 @@
-
+services:
+  - type: static
+    name: Portfolio Puneeth B
+    env: static
+    buildCommand: ""
+    staticPublishPath: .
